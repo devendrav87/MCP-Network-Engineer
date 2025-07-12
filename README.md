@@ -28,7 +28,7 @@ That's exactly what Python functions let you do. You're not learning to code - y
 
 ### show-interfaces-with-errors
 
-This function replaced my 2-hour Monday morning routine. Let me show you how a simple function can check all your switches for interface errors in seconds:
+This function replaced your 2-hour Monday morning routine. Let me show you how a simple function can check all your switches for interface errors in seconds:
 
 ```python
 def show_interfaces_with_errors(error_threshold=100):
