@@ -414,7 +414,7 @@ The future of network operations is conversational. Ready to join the revolution
 
 ---
 
-**About the Author**: A network engineer who's spent too many 2 AM hours in SSH sessions and decided there had to be a better way.
+**About the Author**: A network engineer who's spent too many hours in SSH sessions and decided there had to be a better way.
 
 **Prerequisites for Part 2**:
 - Basic Python knowledge
