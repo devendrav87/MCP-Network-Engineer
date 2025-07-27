@@ -74,7 +74,7 @@ Let's break down the architecture using concepts we already know:
 
 Let me walk you through exactly what happens when you type that 2 AM query. This is the same architecture diagram from above, but now with the technical details:
 
-**Layer 1: User Layer
+##Layer 1: User Layer
 Purpose: This is where you, the user, interact with the system.
 Key Components:
 
