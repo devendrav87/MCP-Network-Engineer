@@ -74,7 +74,7 @@ Let's break down the architecture using concepts we already know:
 
 Let me walk you through exactly what happens when you type that 2 AM query. This is the same architecture diagram from above, but now with the technical details:
 
-##Layer 1: User Layer
+## Layer 1: User Layer
 Purpose: This is where you, the user, interact with the system.
 Key Components:
 
@@ -83,7 +83,7 @@ Example: "Check the health of all devices"
 
 Analogy: Think of it as the reception desk where you make your request
 
-**Layer 2: AI Processing Layer
+## Layer 2: AI Processing Layer
 Purpose: This is the "brain" that understands what you want.
 Processing Steps (Duration: 2-5 seconds):
 1. Understand Intent
@@ -110,7 +110,7 @@ Packages everything properly
 
 Analogy: This layer acts as a translator converting everyday language into computer instructions.
 
-**Layer 3: MCP Server Layer
+## Layer 3: MCP Server Layer
 Purpose: This is the "execution engine" that actually performs the work.
 Processing Steps (Duration: 6-12 seconds):
 1. Authenticate
@@ -136,7 +136,7 @@ Standardizes format
 
 Analogy: Like a skilled technician who knows how to work with different equipment brands.
 
-**Layer 4: Network Infrastructure
+## Layer 4: Network Infrastructure
 Purpose: The actual network devices being managed.
 Device Types:
 
@@ -153,7 +153,7 @@ Multi-vendor environment
 50 total devices
 
 
-**Layer 5: AI Analysis & Response
+## Layer 5: AI Analysis & Response
 Purpose: Takes technical data and makes it understandable.
 Processing Steps (Duration: 13-17 seconds):
 Pattern Recognition
@@ -173,7 +173,7 @@ Provide actionable insights
 
 Analogy: Like having an expert analyst who spots issues and explains them clearly.
 
-**Final Response
+##  Final Response
 Total Time: ~12.3 seconds
 Network Health Report:
 ✅ spine1: Healthy (CPU 23%, all interfaces up)
@@ -186,7 +186,7 @@ Recommendation: Replace cable/SFP on spine2 Et1
 Overall health: 48/50 devices healthy (96%)
 
 How It All Works Together
-Step-by-Step Flow:
+## Step-by-Step Flow:
 
 User Input → Natural language question
 AI Processing → Understands and translates to technical commands
@@ -194,6 +194,8 @@ MCP Server → Executes commands on network devices
 Infrastructure → Devices respond with raw data
 AI Analysis → Analyzes results and identifies issues
 Final Output → Clear, actionable report delivered to user
+
+
 ### The Magic Moment - How AI Understands Our Intent
 
 This is the part that blew my mind when I first saw it work.
