@@ -68,49 +68,7 @@ But MCP is more than just a wrapper around SSH. It's a complete framework that:
 ### The Architecture - How MCP Actually Works
 
 Let's break down the architecture using concepts we already know:
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                      User Interface                         │
-│                 "Check health of all devices"               │
-└───────────────────────────┬─────────────────────────────────┘
-                            │
-┌───────────────────────────▼─────────────────────────────────┐
-│                    AI Assistant Layer                       │
-│              (Claude, GPT-4, Local LLM)                    │
-│                                                            │
-│  • Natural Language Understanding                          │
-│  • Intent Recognition                                      │
-│  • Function Selection                                      │
-└───────────────────────────┬─────────────────────────────────┘
-                            │
-┌───────────────────────────▼─────────────────────────────────┐
-│                    MCP Protocol Layer                      │
-│                   (JSON-RPC Messages)                      │
-│                                                            │
-│  {                                                         │
-│    "method": "check_device_health",                       │
-│    "params": {"devices": ["all"]}                         │
-│  }                                                         │
-└───────────────────────────┬─────────────────────────────────┘
-                            │
-┌───────────────────────────▼─────────────────────────────────┐
-│                    MCP Server Layer                        │
-│              (Your Python/Go/Node.js App)                  │
-│                                                            │
-│  • Authentication & Authorization                          │
-│  • Command Mapping (Vendor Abstraction)                    │
-│  • Parallel Execution Engine                               │
-│  • Response Formatting                                     │
-└───────────────────────────┬─────────────────────────────────┘
-                            │
-        ┌───────────────────┴───────────────────┐
-        │                                       │
-┌───────▼─────────┐                   ┌─────────▼───────────┐
-│  Network Device │                   │  Network Device     │
-│   (Arista EOS)  │      . . .        │   (Cisco IOS-XE)   │
-└─────────────────┘                   └─────────────────────┘
-```
+<img width="968" height="1299" alt="image" src="https://github.com/user-attachments/assets/909a2fe7-e179-4bed-aa6c-c21a567b8c87" />
 
 #### Understanding the Flow - A Step-by-Step Journey
 
