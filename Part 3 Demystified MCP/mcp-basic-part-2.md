@@ -22,7 +22,6 @@ Network engineers face daily challenges:
 - **Multi-Device Management**: Checking 50 switches means 50 SSH sessions
 - **Context Switching**: Jumping between CLI, documentation, and monitoring tools
 - **Barrier to Entry**: Junior engineers need months to learn command syntax
-- **3 AM Troubleshooting**: When you're half-awake, remembering exact commands is hard
 
 ### The Solution
 
